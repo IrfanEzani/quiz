@@ -1,6 +1,29 @@
 :root {
-  background-color: ;
+  background-color: #cce3fc;
   font-size: 62.5%;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  /* Styles */
+  h1 {
+    font-size: 4rem;
+    color: #183249;
+    margin-bottom: 5rem;
+  }
+
+  h2#question {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
 }
 
 * {
@@ -19,7 +42,10 @@ h1 {
   font-size: 5.4rem;
   color: #183249;
   margin-bottom: 5rem;
+  text-align:
+  
 }
+
 
 h1 > span {
   font-size: 2.4rem;
@@ -38,9 +64,9 @@ h3 {
 }
 
 .hidden {
-opacity: 0;
-pointer-events: none;
-width: 20vw;
+  opacity: 0;
+  pointer-events: none;
+  width: 20vw;
 }
 /* UTILITIES */
 
@@ -124,8 +150,8 @@ input::placeholder {
   align-items: center;
 }
 .choose label {
-color:  #56a5eb;
-text-transform: capitalize;
+  color:  #56a5eb;
+  text-transform: capitalize;
 }
 
 .choose select {
