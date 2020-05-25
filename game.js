@@ -26,7 +26,7 @@ fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=hard&type=mul
   questions = datas.results.map(data => {
         const format_question = {
         question: he.decode(data.question),
-        answer: Math.floor(Math.random() * 3)  + 1
+          answer: Math.floor(Math.random() * 3)  + 1
       }
       const answerChoices = [...data.incorrect_answers] //get only incorrect answers
       answerChoices.splice(
