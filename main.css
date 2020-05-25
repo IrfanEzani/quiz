@@ -11,10 +11,7 @@
   color: #333;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1,h2,h3,h4 {
   margin-bottom: 1rem;
 }
 
@@ -63,7 +60,6 @@ h3 {
   align-items: center;
 }
 
-
 .hidden {
   display: none;
 }
@@ -92,4 +88,59 @@ h3 {
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
+}
+
+
+/* game  */
+#game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid rgb(86, 165, 235, 0.25);
+  background-color: white;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  background-color: #56a5eb;
+  color: white;
+}
+
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.correct {
+  background-color: rgb(196, 255, 134);
+}
+
+.incorrect {
+  background-color: #dc3545;
 }
