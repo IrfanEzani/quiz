@@ -54,7 +54,8 @@ function getNewQuestion() {
 
   // if no questions are left
   if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
-      return window.location.assign("/end.html")
+      localStorage.setItem("mostRecentScore", score);
+      return window.location.assign("/end.html") //go to end.html 
   }
 
 questionCounter++;
